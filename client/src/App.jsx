@@ -12,6 +12,7 @@ import BloodRequest from "./components/BloodRequest"
 import AboutSection  from "./components/About"
 // import BloodDonationMyths from './components/BloodDonationMyths';
 import { BrowserRouter as Router ,Routes ,Route } from "react-router-dom";
+import MythFactCarousel from './components/MythFactCarousel';
 
 const App = () => {
   return (
@@ -31,7 +32,7 @@ const App = () => {
         </Routes>
       </div>
     </Router>
-    
+    <MythFactCarousel/>
        <Contact/>
   
    {/* <WDonorLogin/> */}
