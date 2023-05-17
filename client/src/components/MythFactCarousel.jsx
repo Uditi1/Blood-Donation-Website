@@ -85,9 +85,9 @@ function MythFactCarousel() {
                 <p className="text-black font-bold">{item.description}</p>
                 <button className="flex items-center space-x-1 mt-6">
                   <BiDonateBlood className="h-5 w-4 text-red-500" />
-                  <span className="text-1xl text-black font-bold">
+                  <button className="text-1xl text-black font-bold">
                     Donate Now
-                  </span>
+                  </button>
                 </button>
               </div>
             ))}
@@ -138,11 +138,12 @@ function MythFactCarousel() {
                 />
                 <h3 className="text-2xl font-bold text-red-700 font-mono">{item.title}</h3>
                 <p className="text-black font-bold">{item.description}</p>
+                
                 <button className="flex items-center space-x-1 mt-6">
                   <BiDonateBlood className="h-5 w-4 text-red-500" />
-                  <span className="text-1xl text-black font-bold">
+                  <Link to="/DonateBlood" className="text-1xl text-black font-bold">
                     Find Donors
-                  </span>
+                  </Link>
                 </button>
               </div>
             ))}
