@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Login from "./Images/Login.png"
 
 const DonateBlood = () => {
   const [name, setName] = useState("");
@@ -28,25 +30,35 @@ const DonateBlood = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8">
-      <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="text-center text-3xl font-extrabold text-gray-900">Donate Blood</h2>
-      </div>
-
+    <div className=" min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+      {/* <div className="sm:mx-auto sm:w-full sm:max-w-md">
+        <h2 className="text-center text-3xl font-extrabold text-gray-900">
+          Donate Blood
+        </h2>
+      </div> */}
+       {/* <div className="bg-white relative p-8 rounded-lg md:w-3/4 lg:w-1/2">
+             
+</div> */}
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+        <div className="bg-white p-8 rounded-lg max-w-sm w-full">
+          <div className="flex justify-center ">
+                <img src={Login} alt="Blood logo" h-auto w-auto />
+              </div>
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="name"
+                className="block text-md text-black font-monoton Font-normal"
+              >
                 Name
               </label>
-              <div className="mt-1">
+              <div>
                 <input
                   id="name"
                   name="name"
                   type="text"
                   required
-                  className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-600 text-gray-700 focus:outline-none focus:ring-red-500 focus:border-red-500 focus:z-10 sm:text-sm"
                   value={name}
                   onChange={handleNameChange}
                 />
@@ -54,16 +66,19 @@ const DonateBlood = () => {
             </div>
 
             <div>
-              <label htmlFor="age" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="age"
+                className="block text-md text-black font-monoton Font-normal"
+              >
                 Age
               </label>
-              <div className="mt-1">
+              <div>
                 <input
                   id="age"
                   name="age"
                   type="number"
                   required
-                  className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 caret-red-500 text-gray-900 focus:outline-none focus:ring-red-500 focus:border-red-500 focus:z-10 sm:text-sm"
                   value={age}
                   onChange={handleAgeChange}
                 />
@@ -71,16 +86,19 @@ const DonateBlood = () => {
             </div>
 
             <div>
-              <label htmlFor="bloodType" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="bloodType"
+                className="block text-md text-black font-monoton Font-normal "
+              >
                 Blood Type
               </label>
-              <div className="mt-1">
+              <div>
                 <input
                   id="bloodType"
                   name="bloodType"
                   type="text"
                   required
-                  className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 caret-red-500 text-gray-900 focus:outline-none focus:ring-red-500 focus:border-red-500 focus:z-10 sm:text-sm"
                   value={bloodType}
                   onChange={handleBloodTypeChange}
                 />
@@ -88,7 +106,10 @@ const DonateBlood = () => {
             </div>
 
             <div>
-              <label htmlFor="lastDonationDate" className="block text-sm font-medium text-gray-700">
+              <label
+                htmlFor="lastDonationDate"
+                className="block text-md text-black font-monoton Font-normal"
+              >
                 Date of Last Donation
               </label>
               <div className="mt-1">
@@ -96,7 +117,7 @@ const DonateBlood = () => {
                   id="lastDonationDate"
                   name="lastDonationDate"
                   type="date"
-                  className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                  className="appearance-none rounded-md relative block font-bold w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-red-500 focus:border-red-500 focus:z-10 sm:text-sm"
                   value={lastDonationDate}
                   onChange={handleLastDonationDateChange}
                 />
@@ -104,14 +125,37 @@ const DonateBlood = () => {
             </div>
 
             <div>
-              <button type="submit" className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                <span className="absolute left-0 inset-y-0 flex items-center pl-3">
-                  <svg className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              {/* <button type="submit" className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md font-mono text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <span className="absolute right-3 inset-y-0 flex items-center pl-3 ">
+                  <svg className="h-5 w-5  text-white font-mono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true ">
                     <path fillRule="evenodd" d="M11.293 5.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L12.586 10H5a1 1 0 110-2h7.586l-1.293-1.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
                 </span>
                 Donate
-              </button>
+              </button> */}
+              <Link
+                to="/Submit"
+                className="bg-red-500 py-3 px-6 rounded-md text-center text-white hover:bg-red-600 block mx-auto w-full"
+                button
+                type="Submit"
+              >
+                <span className="absolute right-3 inset-y-0 flex items-center pl-3 ">
+                  <svg
+                    className="h-5 w-5  text-white font-monoton"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true "
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M11.293 5.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L12.586 10H5a1 1 0 110-2h7.586l-1.293-1.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </span>
+                Sign Up
+              </Link>
             </div>
           </form>
         </div>

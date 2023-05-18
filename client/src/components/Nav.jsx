@@ -332,6 +332,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const Nav = () => {
+ 
   return (
     <>
       <div className=" py-2">
@@ -340,27 +341,27 @@ const Nav = () => {
 
           <ul className="flex items-center">
             <li className="mx-4">
-              <Link to="/" className="text-gray-800 hover:text-red-500 font-bold">
+              <Link to="/" className="text-gray-800 hover:text-red-500 font-bold hover:underline underline-offset-4 decoration-2 decoration-red-600 py-2 rounded-lg">
                 HOME
               </Link>
             </li>
             <li className="mx-4">
-            <Link to="/about" className="text-gray-800 hover:text-red-500 font-bold">
+            <Link to="/about" className="text-gray-800 hover:text-red-500 font-bold hover:underline underline-offset-4 decoration-2 decoration-red-600 py-2 rounded-lg  ">
                 ABOUT US
               </Link>
             </li>
             <li className="mx-4">
-            <Link to="/LookingBlood" className="text-gray-800 hover:text-red-500 font-bold">
+            <Link to="/LookingBlood" className="text-gray-800 hover:text-red-500 font-bold hover:underline underline-offset-4 decoration-2 decoration-red-600 py-2 rounded-lg ">
                 LOOKING FOR BLOOD
               </Link>
             </li>
             <li className="mx-4">
-            <Link to="/Donor" className="text-gray-800 hover:text-red-500 font-bold">
+            <Link to="/Donor" className="text-gray-800 hover:text-red-500 font-bold hover:underline underline-offset-4 decoration-2 decoration-red-600 py-2 rounded-lg " >
                 DONATE BLOOD
               </Link>
             </li>
             <li className="mx-4">
-              <Link to="/login" className="text-gray-800 hover:text-red-500 font-bold hover:border-">
+              <Link to="/login" className="text-gray-800 hover:text-red-500 font-bold hover:underline underline-offset-4 decoration-2 decoration-red-600 py-2 rounded-lg  ">
                 SANJEEVNI LOGIN
               </Link>
             </li>

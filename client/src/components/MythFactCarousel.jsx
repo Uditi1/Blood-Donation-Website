@@ -63,10 +63,10 @@ function MythFactCarousel() {
       <div className="mb-6">
         <div className="flex items-center justify-between mb-2 px-2">
           <h2 className="text-4xl font-extrabold font-mono text-red-600 text-center">Blood Donation</h2>
-          <button className="flex items-center space-x-1">
+          <a href="#" className="flex items-center space-x-1">
             <span className="text-black text-lg font-bold">Filter</span>
             <FiFilter className="h-5 w-4 text-red-500" />
-          </button>
+          </a>
         </div>
         <div className="grid grid-cols-2 gap-4">
           {bloodDonationItems
@@ -83,12 +83,10 @@ function MythFactCarousel() {
                 />
                 <h3 className="text-2xl font-bold text-red-700 font-mono">{item.title}</h3>
                 <p className="text-black font-bold">{item.description}</p>
-                <button className="flex items-center space-x-1 mt-6">
+                <a href="#" className="flex items-center space-x-1 mt-6">
                   <BiDonateBlood className="h-5 w-4 text-red-500" />
-                  <button className="text-1xl text-black font-bold">
-                    Donate Now
-                  </button>
-                </button>
+                  <span className="text-1xl text-black font-bold">Donate Now</span>
+                </a>
               </div>
             ))}
         </div>
@@ -114,10 +112,10 @@ function MythFactCarousel() {
       <div>
         <div className="flex items-center justify-between mb-2 px-2">
           <h2 className="text-4xl font-extrabold font-mono text-red-600 text-center ">Blood Finder</h2>
-          <button className="flex items-center space-x-1">
+          <a href="#" className="flex items-center space-x-1">
             <span className="text-black text-lg font-bold">Filter</span>
             <FiFilter className="h-4 w-4 text-red-500" />
-          </button>
+          </a>
         </div>
         <div className="grid grid-cols-2 gap-4">
           {bloodFinderItems
@@ -138,13 +136,11 @@ function MythFactCarousel() {
                 />
                 <h3 className="text-2xl font-bold text-red-700 font-mono">{item.title}</h3>
                 <p className="text-black font-bold">{item.description}</p>
-                
-                <button className="flex items-center space-x-1 mt-6">
+
+                <a href="/" className="flex items-center space-x-1 mt-6">
                   <BiDonateBlood className="h-5 w-4 text-red-500" />
-                  <Link to="/DonateBlood" className="text-1xl text-black font-bold">
-                    Find Donors
-                  </Link>
-                </button>
+                  <span className="text-1xl text-black font-bold">Find Donors</span>
+                </a>
               </div>
             ))}
         </div>

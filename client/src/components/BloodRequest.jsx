@@ -88,7 +88,7 @@ const BloodRequest = () => {
           </div>
           <button
             type="submit"
-            className="block bg-red-500 text-white px-4 py-2 rounded-md font-bold hover:bg-red-700 focus:outline-none" // Using hover utility class for hover state
+            className="block bg-red-500 text-white px-4 py-2 mt-4 rounded-md font-bold hover:bg-red-700 focus:outline-none" // Using hover utility class for hover state
           >
             Submit Request
           </button>
