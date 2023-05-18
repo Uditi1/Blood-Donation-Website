@@ -359,7 +359,7 @@ const Nav = () => {
               </Link>
             </li>
             <li className="mx-4">
-            <Link to="/Donor" className="text-gray-800 hover:text-red-500 font-bold hover:underline underline-offset-4 decoration-2 decoration-red-600 py-2 rounded-lg " >
+            <Link to="/DonateBlood" className="text-gray-800 hover:text-red-500 font-bold hover:underline underline-offset-4 decoration-2 decoration-red-600 py-2 rounded-lg " >
                 DONATE BLOOD
               </Link>
             </li>
