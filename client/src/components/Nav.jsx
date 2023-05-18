@@ -339,7 +339,7 @@ const Nav = () => {
         <div className="container flex justify-between  items-center px-4">
         <h3 className="text-xl font-monoton text-gray-900">SANJEEVNI</h3>
 
-          <ul className="flex items-center">
+          <ul className="flex  items-end ">
             <li className="mx-4">
               <Link to="/" className="text-gray-800 hover:text-red-500 font-bold hover:underline underline-offset-4 decoration-2 decoration-red-600 py-2 rounded-lg">
                 HOME

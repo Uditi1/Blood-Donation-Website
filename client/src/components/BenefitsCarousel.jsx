@@ -1,86 +1,3 @@
-// import React from 'react';
-// import Card from "./Card"
-
-// const NewCarousel = () => {
-//   const benefits = [
-//     {
-//       title: 'Save Lives',
-//       description: 'Donating blood can help save the lives of up to three people in need.',
-//     },
-//     {
-//       title: 'Reduce Risk of Heart Disease',
-//       description: 'Regular blood donation can reduce the risk of heart disease in donors.',
-//     },
-//     {
-//       title: 'Burn Calories',
-//       description: 'Donating blood can burn up to 650 calories.',
-//     },
-//     {
-//       title: 'Free Health Check-Up',
-//       description: 'Donors receive a free health check-up before donating blood.',
-//     },
-//   ];
-
-//   return (
-//     <div className="flex gap-2 container mx-auto py-8">
-//       {benefits.map((benefit, index) => (
-//         <Card key={index} title={benefit.title} description={benefit.description} />
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default NewCarousel;
-
-// import React from 'react';
-// import { Carousel } from 'react-responsive-carousel';
-// import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
-// const BenefitsCarousel = () => {
-//   const benefits = [
-//     {
-//       title: 'Save Lives',
-//       description: 'Donating blood can help save the lives of up to three people in need.',
-//     },
-//     {
-//       title: 'Reduce Risk of Heart Disease',
-//       description: 'Regular blood donation can reduce the risk of heart disease in donors.',
-//     },
-//     {
-//       title: 'Burn Calories',
-//       description: 'Donating blood can burn up to 650 calories.',
-//     },
-//     {
-//       title: 'Free Health Check-Up',
-//       description: 'Donors receive a free health check-up before donating blood.',
-//     },
-//   ];
-
-//   return (
-//     <Carousel
-//       showThumbs={false}
-//       showStatus={false}
-//       infiniteLoop={true}
-//       autoPlay={true}
-//       interval={5000}
-//       stopOnHover={true}
-//       showIndicators={false}
-//       showArrows={false}
-//     >
-//       {benefits.map((benefit, index) => (
-//         <div key={index} className="bg-white rounded-lg shadow-lg p-6">
-//         <h1 className="text-4xl font-bold text-red-500 mb-4">Benefits of Donating Blood</h1>
-//         <h2 className="text-lg font-medium mb-2">{benefit.title}</h2>
-//         <p className="text-gray-600 text-sm">{benefit.description}</p>
-//       </div>
-      
-//       ))}
-//     </Carousel>
-//   );
-// };
-
-// export default BenefitsCarousel;
-
 
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
@@ -165,11 +82,6 @@ const BenefitsCarousel = () => {
       icon: FiSmile
     },
     {
-      title: "Enhanced Flexibility",
-      description: "Incorporating stretching exercises and flexibility training at the gym can improve joint mobility and overall flexibility.",
-      icon: GrYoga,
-    },
-    {
       title: "Bone Health",
       description: "Weight-bearing exercises at the gym, such as lifting weights, can help strengthen bones and reduce the risk of osteoporosis.",
       icon: CgGym,
@@ -179,9 +91,14 @@ const BenefitsCarousel = () => {
       description: "Regular physical activity at the gym can promote better sleep patterns and improve the quality of your sleep.",
       icon: IoMdMoon,
     },
+    {
+      title: "Enhanced Flexibility",
+      description: "Incorporating stretching exercises and flexibility training at the gym can improve joint mobility and overall flexibility.",
+      icon: GrYoga,
+    },
     // {
-    //   title: "Boosted Self-Confidence",
-    //   description: "Achieving fitness goals, gaining strength, and improving physique at the gym can boost self-confidence and self-esteem.",
+      //   title: "Boosted Self-Confidence",
+      //   description: "Achieving fitness goals, gaining strength, and improving physique at the gym can boost self-confidence and self-esteem.",
     //   icon: trophy,
     // },
   ];
@@ -200,7 +117,7 @@ const BenefitsCarousel = () => {
       {benefits.map((benefit, index) => {
         const IconComponent = benefit.icon;
         return (
-          <div key={index} className="bg-white rounded-lg shadow-lg p-6">
+          <div key={index} className="bg-white rounded-lg shadow-lg p-6 z-9999">
             <div className="flex justify-center items-center">
               <IconComponent className="text-red-500 text-6xl" />
               <h1 className="text-4xl font-bold text-red-500 ml-4">

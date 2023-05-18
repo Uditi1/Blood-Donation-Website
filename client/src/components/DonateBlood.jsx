@@ -85,7 +85,7 @@ const DonateBlood = () => {
               </div>
             </div>
 
-            <div>
+            {/* <div>
               <label
                 htmlFor="bloodType"
                 className="block text-md text-black font-mono font-extrabold "
@@ -103,8 +103,36 @@ const DonateBlood = () => {
                   onChange={handleBloodTypeChange}
                 />
               </div>
-            </div>
+            </div> */}
 
+<div>
+  <label
+    htmlFor="bloodType"
+    className="block text-md text-black font-mono font-extrabold "
+  >
+    Blood Type
+  </label>
+  <div>
+    <select
+      id="bloodType"
+      name="bloodType"
+      required
+      className="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 caret-red-500 text-gray-900 focus:outline-none focus:ring-red-500 focus:border-red-500 focus:z-10 sm:text-sm"
+      value={bloodType}
+      onChange={handleBloodTypeChange}
+    >
+      <option value="">Select a blood type</option>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+    </select>
+  </div>
+</div>
             <div>
               <label
                 htmlFor="lastDonationDate"

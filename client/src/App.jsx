@@ -43,8 +43,19 @@ const App = () => {
         </Routes>
       </div>
     </Router>
-
+   
+    {/* <div className="container mx-auto py-8">
+      <BenefitsCarousel />
+    </div> */}
+   
+   
     
+   {/* <Donor/> */}
+       
+  {/* <DonateBlood/> */}
+   {/* <WDonorLogin/> */}
+  {/* <BloodBankCards/> */}
+   {/* <RegisterBloodBank/> */}
     {/* <Footer/> */}
     </>
   );

@@ -5,6 +5,8 @@ import { FiFilter } from "react-icons/fi";
 import { BiDonateBlood } from "react-icons/bi";
 import galleryfirstimg from "./Images/galleryfirstimg.jpg"
 import gallerysecondimg from "./Images/gallerysecondimg.jpg";
+import { Link } from "react-router-dom";
+
 
 function MythFactCarousel() {
   const [searchText, setSearchText] = useState("");
@@ -63,7 +65,7 @@ function MythFactCarousel() {
       <div className="mb-6">
         <div className="flex items-center justify-between mb-2 px-2">
           <h2 className="text-4xl font-extrabold font-mono text-red-600 text-center">Blood Donation</h2>
-          <a href="#" className="flex items-center space-x-1">
+          <a href ="#" className="flex items-center space-x-1">
             <span className="text-black text-lg font-bold">Filter</span>
             <FiFilter className="h-5 w-4 text-red-500" />
           </a>
@@ -83,10 +85,10 @@ function MythFactCarousel() {
                 />
                 <h3 className="text-2xl font-bold text-red-700 font-mono">{item.title}</h3>
                 <p className="text-black font-bold">{item.description}</p>
-                <a href="#" className="flex items-center space-x-1 mt-6">
+                <Link to="/dLogin" className="flex items-center space-x-1 mt-6">
                   <BiDonateBlood className="h-5 w-4 text-red-500" />
                   <span className="text-1xl text-black font-bold">Donate Now</span>
-                </a>
+                </Link>
               </div>
             ))}
         </div>
@@ -137,10 +139,10 @@ function MythFactCarousel() {
                 <h3 className="text-2xl font-bold text-red-700 font-mono">{item.title}</h3>
                 <p className="text-black font-bold">{item.description}</p>
 
-                <a href="/" className="flex items-center space-x-1 mt-6">
+                <Link to="/DonorList" className="flex items-center space-x-1 mt-6">
                   <BiDonateBlood className="h-5 w-4 text-red-500" />
                   <span className="text-1xl text-black font-bold">Find Donors</span>
-                </a>
+                </Link>
               </div>
             ))}
         </div>
