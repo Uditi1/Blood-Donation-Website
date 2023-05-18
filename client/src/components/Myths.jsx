@@ -56,6 +56,8 @@ const Myths= () => {
 
 
   return (
+
+    // ....components setting.......................
     <Carousel
       showThumbs={false}
       showStatus={false}
@@ -66,9 +68,13 @@ const Myths= () => {
       showIndicators={false}
       showArrows={false}
     >
+      {/* ...components settings */}
       {benefits.map((benefit, index) => {
         const IconComponent = benefit.icon;
         return (
+
+
+          // ...............................amin content start here ................................
           <div key={index} className="bg-white rounded-lg shadow-lg p-6 z-9999">
             <div className="flex justify-center items-center">
               <IconComponent className="text-red-500 text-6xl" />
@@ -79,6 +85,9 @@ const Myths= () => {
             <h2 className="text-2xl text-red-600 mb-2 font-monoton font-bold">{benefit.myth}</h2>
             <p className="text-red-700 text-xl font-mono font-bold">{benefit.fact}</p>
           </div>
+      //  ...........................main content ends here........................................... 
+
+          
         );
       })}
     </Carousel>

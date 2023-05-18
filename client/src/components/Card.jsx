@@ -1,27 +1,10 @@
-// import React from 'react';
-// import Draggable from 'react-draggable';
-
-// const Card = ({ title, description }) => {
-//   return (
-//     <Draggable>
-//       <div className="bg-white rounded-lg shadow-lg p-6">
-//         <h2 className="text-lg font-medium mb-2">{title}</h2>
-//         <p className="text-gray-600 text-sm">{description}</p>
-//       </div>
-//     </Draggable>
-//   );
-// };
-
-// export default Card;
-
-
  import React from 'react'
 //  import wholeblood from "./Images/wholeblood.jpg"
 import blooddonation from "./Images/blooddonation.jpg"
 import blood1 from "./Images/blood1.jpg"
 import plasma from "./Images/plasma.jpg"
 
-
+// ......................handleclick functionality starts here.........................
 const Card = () => {
   const handleClick1 = (e) => {
     window.location.href = `https://youtu.be/BwjwbxbwN34`;
@@ -35,7 +18,9 @@ const Card = () => {
   const handleClick4 = (e) => {
     window.location.href = `https://youtu.be/08Pb-UZPLiU`;
   }
+  // ......................handleclick functionality ends here.........................
   return (
+    // .....................................main content...............................................................
     <div>
       <div className="flex flex-nowrap ml-2 mr-2 sm:grid-cols-2 gap-4">
   {/* <!-- Whole Blood Donation card --> */}
@@ -93,6 +78,7 @@ const Card = () => {
   </div>
 </div>
     </div>
+    // .....................................main content.........................................................
   )
 }
 

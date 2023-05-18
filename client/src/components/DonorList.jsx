@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";
 import red3 from "./Images/red3.jpg"
-
+// ............................states mained start here..................................................
 const DonorList = () => {
   const [name, setName] = useState("");
   const [bloodGroup, setBloodGroup] = useState("");
@@ -9,7 +9,7 @@ const DonorList = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [selectedBloodGroup, setSelectedBloodGroup] = useState("");
-
+// ............................states mained start here..................................................
   const handleSubmit = (e) => {
     e.preventDefault();
     const newDonor = { name, email, phone, bloodGroup };
@@ -67,6 +67,7 @@ const DonorList = () => {
   ];
 
   return (
+    // .........................................main content start here.........................................
     <div className="p-4 flex justify-center items-center">
       <img
         src={red3}
@@ -196,6 +197,7 @@ const DonorList = () => {
         </table>
       </div>
     </div>
+    // ........................................main content ends here...............................................
   );
 };
 

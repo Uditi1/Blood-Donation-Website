@@ -3,6 +3,7 @@ import React from 'react'
 const Contact = () => {
 
   return (
+    // ..................................................main content...............................................
     <section className="text-gray-600 body-font relative my-2 mb-2">
       <div className="absolute inset-0 bg-gray-300">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.7484814422082!2d77.46594007444945!3d28.727061779783615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf18c5934d76f%3A0x5d3f2c13aca899f3!2sH%20R%20Institute%20of%20Engineering%20And%20Technology%2C%20Ghaziabad!5e0!3m2!1sen!2sin!4v1683015307930!5m2!1sen!2sin" width="100%" height="650" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -24,6 +25,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    // ...................................................main content...............................................
   )
 }
 

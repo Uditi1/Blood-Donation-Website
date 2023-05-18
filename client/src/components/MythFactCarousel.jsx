@@ -13,7 +13,9 @@ function MythFactCarousel() {
   const [filterText, setFilterText] = useState("");
   const [showInStockOnly, setShowInStockOnly] = useState(false);
 
+  
   const bloodDonationItems = [
+    // ........................blood object start here........................
     {
       id: 1,
       title: "Donate Blood",
@@ -46,7 +48,7 @@ function MythFactCarousel() {
         "Don't know what blood type you need or want to learn more about the donation process? Check out our resources section.",
     },
   ];
-
+ // ........................blood object end here........................
   const handleSearchTextChange = (event) => {
     setSearchText(event.target.value);
   };
@@ -60,6 +62,9 @@ function MythFactCarousel() {
   };
 
   return (
+
+    
+  //  ....................................main content start here .........................................
     <div className="container mx-auto my-10">
       {/* Blood Donation Gallery */}
       <div className="mb-6">
@@ -191,6 +196,9 @@ function MythFactCarousel() {
         </div>
       </div>
     </div>
+  //  .............................main content ends here ................................
+
+
   );
 }
 
