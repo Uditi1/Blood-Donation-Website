@@ -15,6 +15,12 @@ import { BrowserRouter as Router ,Routes ,Route } from "react-router-dom";
 import MythFactCarousel from './components/MythFactCarousel';
 import DonateBlood from './components/DonateBlood';
 import BenefitsCarousel from './components/BenefitsCarousel';
+// import BloodBankDetails from './components/BloodBankDetails';
+import DonorList from './components/DonorList';
+import Card from './components/Card';
+import DonorList from './components/DonorList';
+import Myths from './components/Myths.jsx';
+
 // 
 const App = () => {
   return (
@@ -24,29 +30,21 @@ const App = () => {
         <Nav />
         
             <Routes>
-          <Route exact path="/" element={<div><Hero /><AboutDonation /><Panel/><AboutSection/></div>}> </Route>
-          <Route path="/about" element={<BloodRequest/>} />
+          <Route exact path="/" element={<div><Hero /><AboutDonation /><Card/><Panel/><AboutSection/>  <div className="container mx-auto py-8"><BenefitsCarousel /></div> <MythFactCarousel/><div className="container mx-auto py-8"><Myths /></div> <Contact/></div>}> </Route>
+          <Route path="/about" element={<AboutDonation/>} />
           <Route path="/LookingBlood" element={<BloodRequest/>} />
-          <Route path="/Donor" element={<div><DonateBlood/></div>} />
+          <Route path="/DonorList" element={<DonorList/>} />
           <Route path="/donation" element={ <Contact/>} />
           <Route path="/login" element={<WLogin/>}/>
           <Route path="/WSignup" element={<WSignup/>}/>
           <Route path="/Signup" element={<div><Hero /><AboutDonation /><Panel/></div>}/>
+          <Route path="/dLogin" element={<WLogin/>}/>
           {/* <Route path="/FindDonor" element={ <DonateBlood/> }/> */}
         </Routes>
       </div>
     </Router>
-   
-    <div className="container mx-auto py-8">
-      <BenefitsCarousel />
-    </div>
-   
-    <MythFactCarousel/>
-       <Contact/>
-  {/* <DonateBlood/> */}
-   {/* <WDonorLogin/> */}
-  {/* <BloodBankCards/> */}
-   {/* <RegisterBloodBank/> */}
+
+    
     {/* <Footer/> */}
     </>
   );
