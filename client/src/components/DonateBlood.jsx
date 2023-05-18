@@ -48,7 +48,7 @@ const DonateBlood = () => {
             <div>
               <label
                 htmlFor="name"
-                className="block text-md text-black font-monoton Font-normal"
+                className="block text-md text-black font-mono font-extrabold"
               >
                 Name
               </label>
@@ -68,7 +68,7 @@ const DonateBlood = () => {
             <div>
               <label
                 htmlFor="age"
-                className="block text-md text-black font-monoton Font-normal"
+                className="block text-md text-black font-mono font-extrabold"
               >
                 Age
               </label>
@@ -88,7 +88,7 @@ const DonateBlood = () => {
             <div>
               <label
                 htmlFor="bloodType"
-                className="block text-md text-black font-monoton Font-normal "
+                className="block text-md text-black font-mono font-extrabold "
               >
                 Blood Type
               </label>
@@ -108,7 +108,7 @@ const DonateBlood = () => {
             <div>
               <label
                 htmlFor="lastDonationDate"
-                className="block text-md text-black font-monoton Font-normal"
+                className="block text-md text-black font-mono font-extrabold"
               >
                 Date of Last Donation
               </label>
