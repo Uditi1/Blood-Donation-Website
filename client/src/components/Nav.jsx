@@ -335,8 +335,11 @@ const Nav = () => {
  
   return (
     <>
-      <div className=" py-2">
-        <div className="container flex justify-between  items-center px-4">
+
+    
+    {/*************** main content *****************/}
+      <div className="py-2 px-3">
+        <div className="flex justify-between   ">
         <h3 className="text-xl font-monoton text-gray-900">SANJEEVNI</h3>
 
           <ul className="flex  items-end ">
@@ -356,7 +359,7 @@ const Nav = () => {
               </Link>
             </li>
             <li className="mx-4">
-            <Link to="/Donor" className="text-gray-800 hover:text-red-500 font-bold hover:underline underline-offset-4 decoration-2 decoration-red-600 py-2 rounded-lg " >
+            <Link to="/DonateBlood" className="text-gray-800 hover:text-red-500 font-bold hover:underline underline-offset-4 decoration-2 decoration-red-600 py-2 rounded-lg " >
                 DONATE BLOOD
               </Link>
             </li>
@@ -368,9 +371,11 @@ const Nav = () => {
           </ul>
         </div>
       </div>
+      {/***************  main content *****************/}
+
+
     </>
   );
 };
 
 export default Nav;
-

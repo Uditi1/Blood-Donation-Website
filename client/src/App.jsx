@@ -18,7 +18,8 @@ import BenefitsCarousel from './components/BenefitsCarousel';
 // import BloodBankDetails from './components/BloodBankDetails';
 import DonorList from './components/DonorList';
 import Card from './components/Card';
-import DonorList from './components/DonorList';
+// import DonorList from './components/DonorList';
+
 import Myths from './components/Myths.jsx';
 
 // 
@@ -35,10 +36,13 @@ const App = () => {
           <Route path="/LookingBlood" element={<BloodRequest/>} />
           <Route path="/DonorList" element={<DonorList/>} />
           <Route path="/donation" element={ <Contact/>} />
+          <Route path="/DonateBlood" element={ <DonateBlood/>} />
           <Route path="/login" element={<WLogin/>}/>
           <Route path="/WSignup" element={<WSignup/>}/>
           <Route path="/Signup" element={<div><Hero /><AboutDonation /><Panel/></div>}/>
           <Route path="/dLogin" element={<WLogin/>}/>
+          <Route path="/DonateBlood" element={<DonateBlood/>}/>
+
           {/* <Route path="/FindDonor" element={ <DonateBlood/> }/> */}
         </Routes>
       </div>

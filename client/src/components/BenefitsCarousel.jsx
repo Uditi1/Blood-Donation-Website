@@ -117,6 +117,8 @@ const BenefitsCarousel = () => {
       {benefits.map((benefit, index) => {
         const IconComponent = benefit.icon;
         return (
+
+          // ...........................................main content start here................................................................
           <div key={index} className="bg-white rounded-lg shadow-lg p-6 z-9999">
             <div className="flex justify-center items-center">
               <IconComponent className="text-red-500 text-6xl" />
@@ -127,6 +129,9 @@ const BenefitsCarousel = () => {
             <h2 className="text-xl text-red-600 mb-2 font-mono font-bold">{benefit.title}</h2>
             <p className="text-red-700 text-md font-mono font-bold">{benefit.description}</p>
           </div>
+          // ......................................main content end here ..........................................................
+
+          
         );
       })}
     </Carousel>

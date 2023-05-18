@@ -54,6 +54,10 @@ const BloodRequest = () => {
   };
 
   return (
+
+
+ // .........................main content ...................................
+
     <div class="container mx-auto px-4 flex flex-col md:flex-row"> {/* Using flexbox for layout */}
     <div class="w-full md:w-1/2 p-4"> {/* Assigning div 50% width in medium and large viewports */}
       <img src={Main} alt="Blood donation" className="w-full h-88 mix-blend-darken max-w-full lg:max-w-none overflow-hidden mt-[-20px] mr-3" /> 
@@ -165,6 +169,9 @@ const BloodRequest = () => {
         </div>
       </div>
     </div>
+    // .........................main content ...................................
+
+    
   );
 };
 

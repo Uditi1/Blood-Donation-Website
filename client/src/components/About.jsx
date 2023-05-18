@@ -3,6 +3,8 @@ import plasma from "./Images/plasma.jpg";
 
 const AboutSection = () => {
   return (
+// ....................main content  starts here ..............................
+  
     <section className="bg-gray-100 py-16">
       <div className="container mx-auto px-8 lg:flex items-center justify-center">
         <img
@@ -20,6 +22,10 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
+
+    //................... main  content ends here ...........
+
+    
   );
 };
 

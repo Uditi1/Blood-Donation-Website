@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Login from "./Images/Login.png"
 
+// ..........................................Donate object starts here......................................
 const DonateBlood = () => {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
@@ -28,7 +29,7 @@ const DonateBlood = () => {
     e.preventDefault();
     // Send donation request to server using user input
   };
-
+// ..........................................Donate object ends here......................................
   return (
     <div className=" min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       {/* <div className="sm:mx-auto sm:w-full sm:max-w-md">
@@ -153,14 +154,7 @@ const DonateBlood = () => {
             </div>
 
             <div>
-              {/* <button type="submit" className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md font-mono text-white bg-red-500 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                <span className="absolute right-3 inset-y-0 flex items-center pl-3 ">
-                  <svg className="h-5 w-5  text-white font-mono" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true ">
-                    <path fillRule="evenodd" d="M11.293 5.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L12.586 10H5a1 1 0 110-2h7.586l-1.293-1.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                </span>
-                Donate
-              </button> */}
+  
               <Link
                 to="/Submit"
                 className="bg-red-500 py-3 px-6 rounded-md text-center text-white hover:bg-red-600 block mx-auto w-full"
@@ -191,5 +185,5 @@ const DonateBlood = () => {
     </div>
   );
 };
-
+// ..............................main component start here..............................................
 export default DonateBlood;
