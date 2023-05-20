@@ -74,7 +74,7 @@ const Myths= () => {
         return (
 
 
-          // ...............................amin content start here ................................
+          // ...............................main content start here ................................
           <div key={index} className="bg-white rounded-lg shadow-lg p-6 z-9999">
             <div className="flex justify-center items-center">
               <IconComponent className="text-red-500 text-6xl" />

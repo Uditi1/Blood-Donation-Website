@@ -1,6 +1,3 @@
-
-
-
 import  React ,{ useState } from "react";
 import Login from "./Images/Login.png"
 import { Link } from "react-router-dom";
@@ -14,7 +11,6 @@ const WLogin = () => {
     event.preventDefault();
     console.log( email, password);
   };
-
   return (
     // ....................................main content strt here ................................
     <div className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center">

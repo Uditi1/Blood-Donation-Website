@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from "react";
 import Main from './Images/Main.jpg'; // Importing blood donation image
 import { FaEdit, FaTrash } from 'react-icons/fa';
