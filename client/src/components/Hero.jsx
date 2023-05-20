@@ -25,7 +25,7 @@ const Hero = () => {
           Donate Blood
         </Link>
       </div>
-      <div className="right-img w-12 ">
+      <div className="right-img  ">
         <img
           src={Main}
           alt="Hero Image"

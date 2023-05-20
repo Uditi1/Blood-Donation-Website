@@ -5,20 +5,20 @@ import Panel from "./components/Panel"
 import AboutDonation from "./components/Aboutdonation"
 import Footer from "./components/Footer"
 import WLogin from './components/WLogin'
-// import BloodBankCards from './components/BloodDonationSlider';
+
 import Contact from "./components/Contact"
 import WSignup from "./components/WSignup"
 import BloodRequest from "./components/BloodRequest"
 import AboutSection  from "./components/About"
-// import BloodDonationMyths from './components/BloodDonationMyths';
+
 import { BrowserRouter as Router ,Routes ,Route } from "react-router-dom";
 import MythFactCarousel from './components/MythFactCarousel';
 import DonateBlood from './components/DonateBlood';
 import BenefitsCarousel from './components/BenefitsCarousel';
-// import BloodBankDetails from './components/BloodBankDetails';
+
 import DonorList from './components/DonorList';
 import Card from './components/Card';
-// import DonorList from './components/DonorList';
+
 
 import Myths from './components/Myths.jsx';
 
@@ -43,14 +43,11 @@ const App = () => {
           <Route path="/dLogin" element={<WLogin/>}/>
           <Route path="/DonateBlood" element={<DonateBlood/>}/>
 
-          {/* <Route path="/FindDonor" element={ <DonateBlood/> }/> */}
+  
         </Routes>
       </div>
     </Router>
-   
-    {/* <div className="container mx-auto py-8">
-      <BenefitsCarousel />
-    </div> */}
+  
    
    
     
