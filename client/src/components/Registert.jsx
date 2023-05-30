@@ -47,6 +47,8 @@ function Registert() {
 
     //console.log(allInputvalue);
   };
+
+  
   return (
     <div className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center">
       <div className="modal-content bg-white p-7 rounded-lg max-w-sm w-full">
