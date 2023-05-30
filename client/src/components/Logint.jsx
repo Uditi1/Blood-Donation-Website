@@ -38,7 +38,7 @@ function Logint() {
       console.log(resjson);
       localStorage.setItem("authToken", resjson.token);
       setTimeout(() => {
-        // navigate("/");
+        navigate("/");
         // localStorage.setItem("authToken", res.token);
       }, 2000);
     } else {
@@ -137,3 +137,4 @@ function Logint() {
 }
 
 export default Logint;
+ 
