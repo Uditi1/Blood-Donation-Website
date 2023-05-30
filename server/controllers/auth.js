@@ -2,6 +2,7 @@ const crypto = require("crypto");
 const ErrorResponse = require("../utils/errorResponse");
 const User = require("../models/User");
 const sendEmail = require("../utils/sendEmail");
+const Comment = require("../models/Comment")
 
 // @desc    Login user
 exports.login = async (req, res, next) => {
@@ -49,6 +50,18 @@ exports.register = async (req, res, next) => {
     next(err);
   }
 };
+
+exports.comments = async (req, res, next) => {
+  const {email, comment} = req.body;
+  try{
+    const commentss = await Comment.create({
+      email, comment
+    });
+    res.status(200).json({ success: true, data: "Comment Sent" });
+  } catch(err) {
+    next(err)
+  }
+}
 
 // @desc    Forgot Password Initialization
 exports.forgotPassword = async (req, res, next) => {
