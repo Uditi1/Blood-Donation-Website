@@ -22,6 +22,9 @@ import Card from './components/Card';
 
 import Myths from './components/Myths.jsx';
 
+import Registert from "./components/Registert.jsx";
+import Logint from "./components/Logint";
+
 // 
 const App = () => {
   return (
@@ -37,11 +40,14 @@ const App = () => {
           <Route path="/DonorList" element={<DonorList/>} />
           <Route path="/donation" element={ <Contact/>} />
           <Route path="/DonateBlood" element={ <DonateBlood/>} />
-          <Route path="/login" element={<WLogin/>}/>
+          {/* <Route path="/login" element={<WLogin/>}/> */}
           <Route path="/WSignup" element={<WSignup/>}/>
           <Route path="/Signup" element={<div><Hero /><AboutDonation /><Panel/></div>}/>
           <Route path="/dLogin" element={<WLogin/>}/>
           <Route path="/DonateBlood" element={<DonateBlood/>}/>
+
+           <Route path="/register" Component={Registert} />
+            <Route path="/login" Component={Logint}/>
 
   
         </Routes>
